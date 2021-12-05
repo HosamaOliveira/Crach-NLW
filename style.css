@@ -56,7 +56,6 @@ main {
   position: absolute;
   top: -15px;
   z-index: 1;
-  animation: scaleSelo 2s infinite alternate;
 }
 
 .avatar>img {
@@ -107,19 +106,6 @@ ul {
   width: 200px;
   margin-top: 20px;
   align-items: center;
-}
-
-/* Key Frames */
-
-@keyframes scaleSelo {
-  from {
-    transform: rotate(0deg);
-    transform: scale();
-  }
-  to {
-    transform: rotate(200deg);
-    /* transform: translateY(-5px); */
-  }
 }
 
 /* Media Queries */
