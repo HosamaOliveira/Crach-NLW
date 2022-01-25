@@ -4,11 +4,10 @@
   margin: 0;
 }
 
-html, body {
+html {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
   --bege: hsl(22, 64%, 76%);
-  height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   /*deixa a fonte mais suave*/
@@ -17,6 +16,9 @@ html, body {
 body {
   display: grid;
   place-items: center;
+  /* height: 100vh; */
+  min-height: 100vh;
+
   background: url(images/backgroundDesktop.png) no-repeat center/cover;
 }
 
@@ -34,9 +36,10 @@ main {
   position: absolute;
   text-align: center;
   background: url(images/background.png) no-repeat center/cover;
+  /* background-color: violet; */
   width: 100vw;
-  min-height: 812px;
-  height: 100vh;
+  /* min-height: 812px; */
+  /* height: 100vh; */
 }
 
 .container {
@@ -102,12 +105,6 @@ ul {
   justify-content: center;
 }
 
-#nextLevelWeekHeat {
-  width: 200px;
-  margin-top: 20px;
-  align-items: center;
-}
-
 /* Media Queries */
 
 @media (min-width:400px) {
@@ -117,12 +114,14 @@ ul {
     height: 540px;
     border-radius: 1rem;
   }
+
   .container {
     display: flex;
     flex-direction: column;
     width: 90%;
     height: 100%;
   }
+
   .avatar {
     margin-top: 50px;
   }
